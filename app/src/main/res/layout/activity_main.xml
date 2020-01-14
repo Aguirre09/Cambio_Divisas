@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <EditText
+        android:id="@+id/etDol"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="Ingrese el valor en Dolares Americanos"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/dos_Euro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etDolar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/uno_Euro"
+        android:layout_width="141dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="54dp"
+        android:hint="Valor en Euros"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/button_Euro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_dolar"
+        app:layout_constraintTop_toBottomOf="@+id/et_Cop" />
+
+    <Button
+        android:id="@+id/button_EURO2"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="120dp"
+        android:hint="Ingrese el valor de Euros"
+        android:text="EURO"
+        app:layout_constraintBottom_toBottomOf="@+id/tres_Peso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_peso2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_DOLAR3"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="17dp"
+        android:text="DOLAR"
+        app:layout_constraintBottom_toTopOf="@+id/et_Cop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_Peso3"
+        app:layout_constraintTop_toBottomOf="@+id/tres_Peso" />
+
+    <TextView
+        android:id="@+id/etPeso"
+        android:layout_width="64dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="364dp"
+        android:text="Pesos : "
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/et_Cop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_Peso3"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="25dp"
+        android:text="PESO"
+        app:layout_constraintBottom_toTopOf="@+id/etPeso"
+        app:layout_constraintEnd_toStartOf="@+id/button_DOLAR3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tres_Peso" />
+
+    <TextView
+        android:id="@+id/etEuro"
+        android:layout_width="50dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="100dp"
+        android:text="Euros : "
+        app:layout_constraintBottom_toBottomOf="@+id/button_Peso3"
+        app:layout_constraintEnd_toStartOf="@+id/et_Euro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_peso2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/etDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="8dp"
+        android:text="Dolares:"
+        app:layout_constraintEnd_toStartOf="@+id/etDol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_Cop"
+        android:layout_width="292dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:hint="Ingrese el valor en Pesos Colombianos"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/button_dolar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etPeso"
+        app:layout_constraintTop_toBottomOf="@+id/tres_Peso" />
+
+    <Button
+        android:id="@+id/button_dolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="56dp"
+        android:text="Dolares"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/uno_Euro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPeso" />
+
+    <Button
+        android:id="@+id/button_peso2"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="34dp"
+        android:text="Peso"
+        app:layout_constraintEnd_toStartOf="@+id/button_EURO2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDolar" />
+
+    <EditText
+        android:id="@+id/et_Euro"
+        android:layout_width="290dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="71dp"
+        android:ems="10"
+        android:hint="Ingrese el valor en Euros"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button_DOLAR3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etEuro"
+        app:layout_constraintTop_toTopOf="@+id/button_peso2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tres_Dolar"
+        android:layout_width="147dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="21dp"
+        android:hint="Valor en Dolar"
+        app:layout_constraintBottom_toTopOf="@+id/button_DOLAR3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tres_Peso"
+        app:layout_constraintTop_toBottomOf="@+id/et_Euro"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tres_Peso"
+        android:layout_width="121dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="85dp"
+        android:hint="Valor en Peso"
+        app:layout_constraintBottom_toTopOf="@+id/etPeso"
+        app:layout_constraintEnd_toStartOf="@+id/tres_Dolar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_peso2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/dos_Peso"
+        android:layout_width="141dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="77dp"
+        android:hint="Valor en Peso "
+        app:layout_constraintBottom_toTopOf="@+id/et_Euro"
+        app:layout_constraintEnd_toStartOf="@+id/dos_Euro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/uno_dolar"
+        android:layout_width="136dp"
+        android:layout_height="30dp"
+        android:hint="Valor en Dolares"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/button_dolar"
+        app:layout_constraintEnd_toEndOf="@+id/button_Peso3"
+        app:layout_constraintStart_toStartOf="@+id/button_dolar"
+        app:layout_constraintTop_toBottomOf="@+id/et_Cop" />
+
+    <Button
+        android:id="@+id/button_Euro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Euro"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/uno_Euro"
+        app:layout_constraintTop_toBottomOf="@+id/et_Cop" />
+
+    <TextView
+        android:id="@+id/dos_Euro"
+        android:layout_width="134dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="19dp"
+        android:hint="Valor en Euros"
+        app:layout_constraintBottom_toTopOf="@+id/button_peso2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dos_Peso"
+        app:layout_constraintTop_toTopOf="@+id/dos_Peso" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="32dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="68dp"
+        android:layout_height="76dp"
+        app:srcCompat="@drawable/dinero"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="408dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
