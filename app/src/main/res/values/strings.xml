@@ -1,3 +1,30 @@
 <resources>
-    <string name="app_name">Cambio_Divisas</string>
+    <string name="app_name">Cambio de Divisas</string>
+
+
+
+
+    <string name="ingre_Dolar">Ingrese el valor en Dolares Americanos :</string>
+    <string name="Valor_Euro">Valor en Euros :</string>
+    <string name="Valor_Dolar">Valor en Dolares :</string>
+    <string name="Valor_Peso">Valor en Pesos :</string>
+
+    <string name="ingre_Euro">Ingrese el valor de Euros :</string>
+    <string name="Unidad_Euro" >Euro :</string>
+    <string name="Unidad_Dolar" >Dolar : </string>
+    <string name="Unidad_Peso" >Peso :</string>
+    <string name="ingre_peso">Ingrese el valor en Pesos Colombianos :</string>
+
+
+
+    <string name="login">Iniciar Sesión</string>
+    <string name="digite_nombre">Nombre</string>
+    <string name="telefono">Teléfono</string>
+    <string name="repetir_password">Repetir Contraseña</string>
+    <string name="registrar">Registrar</string>
+    <string name="resultado">Resultado</string>
+
+
+
+
 </resources>
